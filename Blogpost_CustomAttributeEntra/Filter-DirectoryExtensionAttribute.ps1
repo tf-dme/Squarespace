@@ -1,4 +1,4 @@
-# Nutzung der MG Powershell Module
+# Nutzung des Powershell Module Microsoft.Graph.Groups
 Get-MgGroup -Filter "extension_6981a79f4efc436db23207fa061f11a2_PIMEnabledGroup eq true"
 
 # Direkte Nutzung der REST API
@@ -11,7 +11,6 @@ $Query = @{
     ContentType = "application/json"
 }
 (Invoke-RestMethod @Query).value | ft
-
 
 # Filterung, welche Gruppen nicht PIMEnabledGroup auf true haben
 $Query = @{
