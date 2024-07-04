@@ -1,5 +1,7 @@
+# Nutzung des Powershell Module Microsoft.Graph.Groups
 Update-MgGroup -GroupId '5a13db6f-1786-4b3c-b88c-d8b148a99e9a' -Bodyparameter @{'extension_6981a79f4efc436db23207fa061f11a2_PIMEnabledGroup' = $false}
 
+# Direkte Nutzung der REST API
 $Query = @{
     Method = "PATCH"
     Headers = @{
