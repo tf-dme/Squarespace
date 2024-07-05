@@ -13,4 +13,4 @@ $Query = @{
         )
     } | ConvertTo-Json
 }
-$extensionPropterty = Invoke-RestMethod @Query
+Invoke-RestMethod @Query
