@@ -1,1 +1,0 @@
-GET https://graph.microsoft.com/v1.0/groups?filter=extension_6981a79f4efc436db23207fa061f11a2_PIMEnabledGroup eq 'True'
